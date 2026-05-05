@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 80px 20px;
+    min-height: 100vh;
+}
+
+#sobre p {
+    text-align: justify;      /* texto justificado */
+    line-height: 1.6;         /* aumenta o espaçamento entre linhas */
+    margin-bottom: 15px;      /* espaço entre parágrafos */
+}
+
+/* Deixa cada campo do formulário em bloco */
+#contato form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;   /* largura máxima do formulário */
+    margin: 0 auto;     /* centraliza na página */
+}
+
+/* Espaço entre os campos */
+#contato label,
+#contato input,
+#contato textarea,
+#contato button {
+    margin-bottom: 15px;
+}
+
+#contato textarea {
+    height: 150px;      /* aumenta a altura da caixa */
+    resize: vertical;   /* permite que o usuário ajuste se quiser */
+}
+
+#contato button {
+    background-color: #007BFF;   /* cor azul */
+    color: white;                /* texto branco */
+    padding: 10px 20px;          /* tamanho reduzido */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;        /* alinha à direita dentro do formulário */
+    width: auto;                 /* não ocupa toda a largura */
+}
+
+/* Efeito ao passar o mouse */
+#contato button:hover {
+    background-color: #0056b3;
+}
+
+#portfolio .aviso {
+    border: 2px dashed #007BFF;   /* borda tracejada azul */
+    background-color: #f0f8ff;    /* fundo azul bem claro */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#portfolio .aviso p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+#portfolio .aviso a {
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#portfolio .aviso a:hover {
+    text-decoration: underline;
+}
+
